@@ -1,0 +1,7 @@
+[package]
+name = "zoid_lexer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zoid_error = { path = "../zoid_error" }
