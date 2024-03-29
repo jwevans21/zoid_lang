@@ -47,6 +47,16 @@ impl<'a, 'b> ZoidLexer<'a, 'b> {
         };
 
         let kind = match c {
+            '(' => ZoidTokenKind::LParen,
+            ')' => ZoidTokenKind::RParen,
+            '{' => ZoidTokenKind::LBrace,
+            '}' => ZoidTokenKind::RBrace,
+            '[' => ZoidTokenKind::LBracket,
+            ']' => ZoidTokenKind::RBracket,
+            ',' => ZoidTokenKind::Comma,
+            ':' => ZoidTokenKind::Colon,
+            ';' => ZoidTokenKind::Semicolon,
+
             '+' => ZoidTokenKind::OpAdd,
             '-' => ZoidTokenKind::OpSub,
             '*' => ZoidTokenKind::OpMul,
